@@ -1,0 +1,233 @@
+Welcome to the Etherpad NEON Data Institute 2016 Etherpad!
+This is a space where you can share notes and ideas with each other. 
+Institute Website:
+ http://neon-workwithdata.github.io/neon-data-institute-2016/
+
+## Workshop Hashtag
+If you tweet during the workshop, please use #NEONDI16 
+
+## Workshop Presentations
+https://figshare.com/articles/NEON_Data_Institute_2016_-_Presentations/3444917
+============================================================================================================================================
+
+Pre-Institute Survey
+If you haven't already filled out the pre-institute survey, please do. We truly appreciate feedback on the first few weeks of the institute - this included the lessons on git / github, RMarkdown and knitr. If you have already filled it out, thank you!
+
+http://colostate.az1.qualtrics.com/SE/?SID=SV_3sKaEzsci10KOjz
+
+
+Please Introduce yourself here: Name, Institution, Twitter handle (if you have one):
+##########################################
+
+* Leah A Wasser, National Ecological Observatory Network (NEON), @leahawasser
+* Naupaka Zimmerman, University of Arizona, @naupakaz
+* Max Joseph, CU Boulder, @mxwlj
+- Henry Senyondo, University of Florida, Weecology Lab
+- Kristin Braziunas, University of Wisconsin - Madison
+- Michiel Veldhuis, University of Groningen, Netherlands
+Cassondra Walker - Oklahoma State University
+- Sarah Graves, University of Florida, @sj_graves
+Kunxuan Wang, University of Illinois 
+Richard Remigio- Columbia University
+Chris Hamm - University of Kansas @butterflyology
+Nate Looker - University of Minnesota @latenooker
+Adrian Lugo Bendezu - University of Puerto Rico Rio Piedras Campus
+Megan Cattau - Columbia University / CU Boulder
+Jon Weiner  - University of Nevada, Reno
+* Robert Paul - University of Illinois at Urbana-Champaign - @_paul_rf
+Holly Andrews, University of California - Riverside
+-Catherine Hulshof De La Peña, University of Puerto Rico Mayagüez, @BE_bilingue
+Dave McCaffrey - University of Lethbridge - @dramccaffrey
+Stella Cousins, University of California Berkeley - @stellacousins
+Jeff Atkins, Virginia Commonwealth University @atkinsjeff
+Amy Hudson, University of Arizona, @amyhud7
+Enrique Montaño, USGS
+Jeffrey Stephens, South Dakota State University
+Megan Jones, NEON   @meganahjones
+Allie Weill, UC Davis, @Al_R_Wallace
+Tomás Acuña, University of Chile
+
+
+
+EVALUATION SURVEYS - 
+==========================
+Thank you for filling out these surveys. Your feedback is much appreciated and will be used to improve the next few days this week and future Data Institutes!  
+
+
+Tuesday Afternoon (Automation): http://colostate.az1.qualtrics.com/SE/?SID=SV_51iIFNBGXkqoxV3  Thank you for your continued feedback.  We very much appreciate the free response comments as they allow us to know more about what YOU are thinking about the program and how we can change it this week to improve your learning!!!
+
+Tuesday Morning (LiDAR data): http://colostate.az1.qualtrics.com/SE/?SID=SV_cN5Eg1AXnInr7RH
+
+Monday Evening (Reproducible Science): http://colostate.az1.qualtrics.com/SE/?SID=SV_dbg9WL9BLkRoeVv Good morning!!! Please fill out the survey for last night's session.  
+
+Monday Afternoon (Open HDF5 in R): http://colostate.az1.qualtrics.com/SE/?SID=SV_9yPOi7gLJbrJfLL 
+
+Pre-Institute Materials:   http://colostate.az1.qualtrics.com/jfe/form/SV_3sKaEzsci10KOjz This was sent out last Friday.  If you have not filled it out, please consider doing so now.
+
+
+
+
+Monday 20 June 2016 Notes
+##########################################
+
+Here is how to catch your branch up to a repo:
+Run git remote add upstream <original_repo_URL>  This will add this repository as another remote.
+Run git fetch upstream. This will download the last changes at this repository.
+Run git checkout <branch>. This will change your copy to the gh-pages branch.
+Run git merge upstream/<branch>. This will get the last changes from this repository to your local copy of the specified branch.
+Push the changes to your github repo: git push origin <branch>
+
+## Load R Package from Github 
+===========================
+# install devtools
+# install.packages("devtools")
+library(devtools)
+
+# install_github("lwasser/neon-aop-package/neonAOP")
+library(neonAOP)
+
+
+
+Replace Data - 
+We found a few glitches in two of the CHM tiff datasets. These are the fixed versions (and the download data buttons on the website are now updated for these files):
+###############################
+SOAP Canopy Height Model File:
+https://ndownloader.figshare.com/files/5407880
+TEAK Canopy Height Model File:
+https://ndownloader.figshare.com/files/5408828
+
+
+
+Data Issues 
+Please use the space below to document issues that you find in our lessons & data.
+####################
+
+The link to the lesson code for "Raster 101" appears to be broken:
+http://neon-workwithdata.github.io/neon-data-institute-2016/code/i 
+This works: http://neon-workwithdata.github.io/neon-data-institute-2016/R/raster-101/
+Yes, but the link to download the code on that page is not functioning
+It may be because there is no code on the page? I think they are using purl() to pull out just the R code from the md and the script they're using to do that might have had an issue since there aren't any code examples on that particular page.
+Here's the raw md file for that particular page: https://raw.githubusercontent.com/NEON-WorkWithData/neon-data-institute-2016/gh-pages/_posts/institute-materials/day1_monday/2016-06-20-raster-101.md
+Thanks!
+Hi guys - there is no code for that lesson - it's just a markdown page with images. i was going to create a slide show from it but ran out of time. i will fix the code link (remove it) later! Thank you for the feedback! Keep it coming! --Leah
+FIXED!!! No more link.  Gold star!
+
+Please indicate the size of the data being deliver so that the end user can obtain the needed resources before delivery.
+
+There was mention of a HDF5 tutorial. Could you direct us to that, please?
+
+http://neondataskills.org/HDF5/ - Thanks!
+
+
+Here is a link to my wrapper script to run when you upgrade R
+https://github.com/butterflyology/updateR
+If you find it helpful, I drink beer
+
+EPSG codes at www.spatialreference.org It's awesome. Super helpful when you don't know the coordinate ref of your data!
+
+
+Directory for Monday evening/night activity
+http://npk.io/TSVJ+
+
+For a Python interface to the OpenTopography data, check out: https://github.com/matt-oak/Summer2016/tree/master/OpenTopo
+^^^ Cool, thnx!
+
+PRESENTATIONS FROM MONDAY
+============================================
+https://figshare.com/articles/NEON_Data_Institute_2016_-_Presentations/3444917
+
+
+When you set a detection threshold with the full waveform LiDAR data, are there biases in what types of objects you might miss because they tend to have a low signal level (e.g., bc of porosity, surface texture, etc.)?
+
+
+Start by putting up objectives/tasks that students will be working though:
+1. Import a raster — A lidar canopy height model (lidar/Teak_lidarCHM.tif)
+For the CHM, set values == 0 to NA (not trees)
+Visualize density and plot vertical cutoff lines.
+Classify the raster according to some distribution – low medium and tall trees. This could be done using a histogram potentially or we could just decide that 6m is generally grasses / understory, 10m small trees,and the rest are tall trees. A function could import the desired thresholds. 
+Plot the classified raster, add a legend for each “class” - legends are super tricky to simplifying this process with a function would be good.  see: http://neon-workwithdata.github.io/neon-data-institute-2016/R/classify-by-threshold-R/  for my take on forcing a legend outside of the plot area using par settings. You may have other better forms of magic to make this work well. :)
+Export the plot figure to a pdf – publishable
+Export the classified raster as a geotiff with NaFlagg = -9999 to an outputs folder.
+
+http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598
+
+sink(paste0(format(Sys.time(), "%Y-%m-%d_%H%M%S"),
+                        "_sessionInfo.txt"))
+sessionInfo()
+sink()
+
+
+make_pdf <- function(expr, filename, ..., verbose = TRUE) {
+    if (verbose) {
+        message("Creating: ", filename)
+    }
+    pdf(file = filename, ...)
+    on.exit(dev.off())
+    eval.parent(substitute(expr))}
+
+
+##########################################
+##########################################
+# function to plot the reclassified raster
+
+plot_reclassified_raster <- function(rast.in, site.name, breaks){
+        # this is a tricky bit because we need to out the legend
+        # outside of the plot region
+        
+        # Get colors for plotting
+        bin.colors <- rev(terrain.colors(length(breaks)))
+        
+        # make room for a legend
+        
+        par(xpd = FALSE, mar = c(5.1, 4.1, 4.1, 4.5))
+        
+        # plot
+        plot(rast.in,
+                 col = bin.colors,
+                 main = paste("Canopy height classes \n", site.name),
+                 legend = FALSE)
+        
+        # allow legend to plot outside of bounds
+        par(xpd = TRUE)
+        
+        # legend x
+        leg.x <- par()$usr[2] + 20
+        
+        # legend y
+        leg.y <- par()$usr[4] + 50 - (abs(par()$usr[3] - par()$usr[4]) / 2) 
+        
+        # create legend text
+        height.mat <- create_height_class_matrix(breaks)
+        
+        # initialize legend text
+        legend.text <- c()
+        
+        for (i in 1:length(breaks)) {
+                
+                legend.text <- c(legend.text, 
+                                                 paste0(height.mat[i, 1], "-", 
+                                                            height.mat[i, 2], " m"))
+        }
+        
+        # create the legend
+        legend(leg.x, leg.y,  # set x,y legend location
+                   legend = legend.text,  # make sure the order matches colors
+                   fill = bin.colors,
+                   bty = "n") # turn off border
+        
+        # turn off plotting outside of bounds
+        par(xpd = FALSE)
+}
+
+##########################################
+
+Code for different versions of the Rmd file and different versions of making the code more modular
+https://github.com/naupaka/NEONDI-2016-tuesday-exercises
+
+##########################################
+
+Some helpful sites on plotting:
+    http://nicercode.github.io/guides/plotting/
+    http://gastonsanchez.com/teaching/r-graphical-parameters-cheatsheet.pdf
+    http://www.statmethods.net/graphs/index.html
+    
